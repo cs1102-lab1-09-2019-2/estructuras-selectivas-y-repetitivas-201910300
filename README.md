@@ -2,10 +2,10 @@
 ## Selectivas y Repetitivas
 
 Nombre:
---
+Matias Enrique Salazar
 
 Github Username:
---
+201910300
 
 Instrucciones:
 --
