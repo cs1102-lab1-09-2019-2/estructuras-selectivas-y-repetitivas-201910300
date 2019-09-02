@@ -13,16 +13,16 @@ void imprimir(int n){
       if (filas%2==0)
       {
         if(columnas%2==0)
-          cout<<"@";
+          cout<<"#";
         else
-           cout<<"#";
+           cout<<"@";
       }
       else
       { 
         if(columnas%2==0)
-          cout<<"#";
-        else
           cout<<"@";
+        else
+          cout<<"#";
        }
     
     }
