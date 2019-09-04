@@ -4,11 +4,11 @@ using std::to_string;
 using namespace std;
 
 
-float promediador(int numero_alumnos)
+void promediador(int numero_alumnos)
     {int PC1,PC2,PC3,PC4,Proyecto,E1,E2; float promedio;
-  for(int i=1;i<numero_alumnos+1;i++)
-  { 
-    cout<<"Alumno numero " + to_string(i) + "\n";
+  
+  for(int i=1;i<=numero_alumnos;i++){
+  cout<<"Alumno numero " + to_string(i) + "\n";
   do{
   cout<<"Ingrese nota de PC1:";
   cin>>PC1;
@@ -38,21 +38,17 @@ float promediador(int numero_alumnos)
   cin>>E2;
   }while(E2<0 || E2>20);
   promedio  = (PC1 + PC2 +PC3 + PC4 + Proyecto + E1 +E2)/7;
-  }
-  return promedio;
-    }
-void aviso(float promedio)
-{
+  
   cout<< "Su promedio es " + to_string(promedio) + "\n";
-  if(promedio>=18.0 && promedio==20.0 )
+  if(promedio>=18.0 && promedio<=20.0 )
   {
     cout<<"UD asistirá al ACM - ICPC International Collegiate Programming Contest\n";
   }
-  if(promedio>=15.0 && promedio==17.99 )
+  if(promedio>=15.0 && promedio<=17.99 )
   {
      cout<<"Imagine Cup\n";
   }
-  if(promedio>=12.00 && promedio==14.99 )
+  if(promedio>=12.00 && promedio<=14.99 )
   {
      cout<<"Hackathon de Miraflores\n";
   }
@@ -60,12 +56,16 @@ void aviso(float promedio)
   {
     cout<<"Necesita mejorar\n";
   }
-     }
+    }
+    }
 
 int main(){
   int numero_alumnos;
   cout<<"Ingrese numero de alumnos:\n";
   cin>>numero_alumnos;
-  float promedio= promediador(numero_alumnos);
-  aviso(promedio);
+  promediador(numero_alumnos);
+  
+  
 }
+
+
