@@ -61,4 +61,5 @@ int main()
   cin>>claro;
   }while(claro != 'S' && claro != 's' && claro != 'N' && claro != 'n' );
   precio(tipo_entrada,claro);
+ return 0;
 }
