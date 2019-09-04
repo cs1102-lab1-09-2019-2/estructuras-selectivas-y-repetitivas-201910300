@@ -64,6 +64,7 @@ int main(){
   cout<<"Ingrese numero de alumnos:\n";
   cin>>numero_alumnos;
   promediador(numero_alumnos);
+  return 0;
   
   
 }
